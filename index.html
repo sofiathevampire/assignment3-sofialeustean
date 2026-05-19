@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pokemon Matching Game</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Darker Grotesque"
+      rel="stylesheet"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="index.js" defer></script>
+  </head>
+  <body class="lightMode">
+    <div class="page">
+      <header class="topbar">
+        <div class="titleAndStartingdropdownButtons">
+          <div class="gameHeader">
+            <div class="headerText">
+              <div class="sofiasGame">Sofia's Pokemon Game</div>
+            </div>
+          </div>
+
+          <div class="topdropdownButtons">
+            <dropdownButton id="start" class="bubbleButton"
+              >Start</dropdownButton
+            >
+            <dropdownButton id="reset" class="bubbleButton"
+              >Reset</dropdownButton
+            >
+            <dropdownButton id="powerUp" class="bubbleButton"
+              >Power‑Up</dropdownButton
+            >
+          </div>
+        </div>
+
+        <div class="topBar">
+          <div class="statBar">
+            <div class="statBox">
+              <span class="statText">Clicks</span>
+              <span id="numClicks" class="value">0</span>
+            </div>
+            <div class="statBox">
+              <span class="statText">Matched</span>
+              <span id="pairsMatched" class="value">0</span>
+              <span class="divider">/</span>
+              <span id="totalPairs" class="value">0</span>
+            </div>
+            <div class="statBox">
+              <span class="statText">Pairs left</span>
+              <span id="redivingPairs" class="value">0</span>
+            </div>
+            <div class="statBox">
+              <span class="statText">Timer</span>
+              <span id="timer" class="value">00:00</span>
+            </div>
+          </div>
+
+          <div class="optionBar">
+            <label class="option">
+              <span class="optionText">Difficulty</span>
+              <select id="difficulty" class="dropdownButton">
+                <option value="easy">Easy</option>
+                <option value="medium">Medium</option>
+                <option value="hard">Hard</option>
+              </select>
+            </label>
+
+            <label class="option">
+              <span class="optionText">Theme</span>
+              <select id="theme" class="dropdownButton">
+                <option value="light">Light</option>
+                <option value="dark">Dark velvet</option>
+              </select>
+            </label>
+
+            <div id="popupMsgBar" class="message"></div>
+          </div>
+        </div>
+      </header>
+      <div class="main">
+        <div id="gameBoard" class="board"></div>
+      </div>
+    </div>
+  </body>
+</html>
