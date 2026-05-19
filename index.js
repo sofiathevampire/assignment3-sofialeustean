@@ -2,9 +2,9 @@ const pokeApiBase = "https://pokeapi.co/api/v2/pokemon/";
 const maxPokemonId = 898;
 
 const difficulties = {
-  easy: { pairs: 6, timeLimit: 90 },
-  medium: { pairs: 12, timeLimit: 150 },
-  hard: { pairs: 15, timeLimit: 210 },
+  easy: { pairs: 6, timeLimit: 30 },
+  medium: { pairs: 12, timeLimit: 60 },
+  hard: { pairs: 15, timeLimit: 70 },
 };
 
 let firstCard = null;
